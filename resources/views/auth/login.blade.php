@@ -14,11 +14,17 @@
                 <div class="mb-3">
                     <label for="email">Email :</label>
                     <input type="email" id="email" name="email" class="form-control" required autofocus>
+                    @error('email')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                 </div>
 
                 <div class="mb-3">
                     <label for="password">Mot de passe :</label>
                     <input type="password" id="password" name="password" class="form-control" required>
+                    @error('password')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                 </div>
 
                 <button type="submit" class="btn btn-primary w-100">Se Connecter</button>
