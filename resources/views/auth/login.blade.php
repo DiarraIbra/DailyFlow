@@ -5,8 +5,10 @@
         <div class="card bg-dark text-white p-4" style="width: 400px;">
             <h2 class="text-center">Connexion</h2>
 
-            @if (session('status'))
-                <div class="alert alert-danger">{{ session('status') }}</div>
+            @if (session('error'))
+                <div class="alert alert-danger text-center">
+                    {{ session('error') }}
+                </div>
             @endif
 
             <form method="POST" action="{{ route('login') }}">
