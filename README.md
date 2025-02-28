@@ -17,16 +17,17 @@ DailyFlow est une application Laravel permettant de gérer efficacement ses tâc
 
 ## 📌 Installation et Configuration
 
+
 1️⃣ **Cloner le projet**
 ```bash
 git clone https://github.com/DiarraIbra/DailyFlow.git
 cd DailyFlow
 2️⃣ Installer les dépendances
-bash
+```bash
 composer install
 npm install && npm run build
 3️⃣ Configurer l'environnement
-bash
+```bash
 cp .env.example .env
 Modifier .env avec les informations de ta base de données :
 
@@ -38,13 +39,13 @@ DB_DATABASE=dailyflow
 DB_USERNAME=root
 DB_PASSWORD=
 4️⃣ Générer la clé de l'application
-bash
+```bash
 php artisan key:generate
 5️⃣ Exécuter les migrations et seeders
-bash
+```bash
 php artisan migrate --seed
 6️⃣ Lancer le serveur
-bash
+```bash
 php artisan serve
 L'application est accessible sur :
 📌 http://127.0.0.1:8000/
