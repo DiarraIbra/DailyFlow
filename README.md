@@ -17,7 +17,7 @@ DailyFlow est une application Laravel permettant de gérer efficacement ses tâc
 
 ## 📌 Installation et Configuration
 
-### 1️⃣ **Cloner le projet**
+1️⃣ **Cloner le projet**
 ```bash
 git clone https://github.com/DiarraIbra/DailyFlow.git
 cd DailyFlow
