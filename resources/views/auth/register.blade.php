@@ -9,15 +9,15 @@
                 @csrf
                 <div class="mb-3">
                     <label for="name">Nom :</label>
-                    <input type="text" id="name" name="name" class="form-control" required autofocus>
-                    @error('nom')
+                    <input type="text" id="name" name="name" class="form-control" autofocus>
+                    @error('name')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
 
                 <div class="mb-3">
                     <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
+                    <input type="email" id="email" name="email" class="form-control">
                     @error('email')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -25,7 +25,7 @@
 
                 <div class="mb-3">
                     <label for="password">Mot de passe :</label>
-                    <input type="password" id="password" name="password" class="form-control" required>
+                    <input type="password" id="password" name="password" class="form-control">
                     @error('password')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -33,8 +33,7 @@
 
                 <div class="mb-3">
                     <label for="password_confirmation">Confirmer Mot de passe :</label>
-                    <input type="password" id="password_confirmation" name="password_confirmation" class="form-control"
-                        required>
+                    <input type="password" id="password_confirmation" name="password_confirmation" class="form-control">
                     @error('password')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror

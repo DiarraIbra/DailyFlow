@@ -17,23 +17,48 @@
             @csrf
             <div class="mb-3">
                 <label class="form-label">Titre :</label>
-                <input type="text" name="title" class="form-control" required>
+                <input type="text" name="title" class="form-control">
+                @error('title')
+                    <div class="btn btn-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
             </div>
             <div class="mb-3">
                 <label class="form-label">Date :</label>
-                <input type="date" name="date" class="form-control" required>
+                <input type="date" name="date" class="form-control">
+                @error('date')
+                    <div class="btn btn-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
             </div>
             <div class="mb-3">
                 <label class="form-label">Heure de début :</label>
-                <input type="time" name="start_time" class="form-control" required>
+                <input type="time" name="start_time" class="form-control">
+                @error('start_time')
+                    <div class="btn btn-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
             </div>
             <div class="mb-3">
                 <label class="form-label">Heure de fin :</label>
-                <input type="time" name="end_time" class="form-control" required>
+                <input type="time" name="end_time" class="form-control">
+                @error('end_time')
+                    <div class="btn btn-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
             </div>
             <div class="mb-3">
                 <label class="form-label">Description :</label>
                 <textarea name="description" class="form-control"></textarea>
+                @error('description')
+                    <div class="btn btn-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
             </div>
             <button type="submit" class="btn btn-success">Créer</button>
         </form>
