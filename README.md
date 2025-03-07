@@ -49,3 +49,4 @@ php artisan migrate --seed
 php artisan serve
 L'application est accessible sur :
 📌 http://127.0.0.1:8000/
+
