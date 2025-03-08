@@ -70,7 +70,7 @@
         @forelse($tasks as $task)
             <div class="card bg-dark text-white p-3 mt-2">
                 <h5>{{ $task->title }}</h5>
-                <p>{{ $task->description }}</p>
+                <p>{{ Str::limit($task->description, 50) }}</p>
                 <p><strong>Date :</strong> {{ $task->date }}</p>
                 <p><strong>Horaire :</strong> {{ $task->start_time }} - {{ $task->end_time }}</p>
                 <div class="d-flex gap-2">
